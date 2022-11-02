@@ -7,11 +7,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Routes>
-      <Route index element={<Home/>}/>
-      <Route path="/albums/new" element={<AddAlbum />}/>
-      <Route path="/albums/:albumId" element={<SingleAlbum />}/>
-    </Routes>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/albums/new" element={<AddAlbum />} />
+        <Route path="/albums/:albumId" element={<SingleAlbum />} />
+      </Routes>
     </div>
   );
 }

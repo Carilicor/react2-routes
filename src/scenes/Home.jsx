@@ -1,8 +1,14 @@
+import Header from "../components/Header"
+import AlbumList from "../components/AlbumList"
+import { Link } from "react-router-dom"
+
+
 export default function Home() {
     return(
         <>
-        <h1>Header goes here...</h1>
-        <p>Album List Here</p>
+        <Header title={'Best Selling Albums'} />
+        <Link to="/albums/new">Add Albums</Link>
+        <AlbumList />
         </>
     )
 }
