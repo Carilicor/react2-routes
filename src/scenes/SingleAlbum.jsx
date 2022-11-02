@@ -7,7 +7,7 @@ export default function SingleAlbums() {
     const { albumId } = useParams()
     const [album, setAlbum] = useState()
     useEffect(() =>{
-        fetch(process.send.REACT_APP_ENDPOINT+'/albums')
+        fetch(process.env.REACT_APP_ENDPOINT+'/albums')
         .then(response => response.json())
         .then(data => {
             const _album = data.find(album => album.albumId === albumId)

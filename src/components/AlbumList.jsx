@@ -6,7 +6,7 @@ export default function AlbumList() {
     const [albums, setAlbums] = useState()
     const [toggle, setToggle] = useState()
     useEffect(() => {
-        fetch(process.send.REACT_APP_ENDPOINT+'/albums')
+        fetch(process.env.REACT_APP_ENDPOINT+'/albums')
             //.setToggle(!toggle)
             .then(response => response.json())
             .then(setAlbums)
