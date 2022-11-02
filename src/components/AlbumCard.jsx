@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function AlbumCard({ album, toggle, setToggle }) {
     const deleteAlbum = () => {
-        fetch (`https://albums-api-cgl.web.app/albums/${album.albumId}`, {
+        fetch (`${process.send.REACT_APP_ENDPOINT}/albums/${album.albumId}`, {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json'}
 
